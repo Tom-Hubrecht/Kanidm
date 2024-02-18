@@ -40,7 +40,7 @@ class Provider extends AbstractProvider
      */
     protected function getAuthUrl($state)
     {
-        return $this->buildAuthUrlFromBase($this->getKanidmUrl().'/oauth2/authorise', $state);
+        return $this->buildAuthUrlFromBase($this->getKanidmUrl().'/ui/oauth2', $state);
     }
 
     /**
