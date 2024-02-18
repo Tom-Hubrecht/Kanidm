@@ -56,7 +56,7 @@ class Provider extends AbstractProvider
      */
     protected function getUserByToken($token)
     {
-        $response = $this->getHttpClient()->get($this->getKanidmUrl().'/oauth2/openid/'.$this.getConfig('client_id').'/userinfo', [
+        $response = $this->getHttpClient()->get($this->getKanidmUrl().'/oauth2/openid/'.$this->getConfig('client_id').'/userinfo', [
             RequestOptions::HEADERS => [
                 'Authorization' => 'Bearer '.$token,
             ],
